@@ -1,4 +1,4 @@
-# anki-web
+# anki-web2
 
 ## Project setup
 ```

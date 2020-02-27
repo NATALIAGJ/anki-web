@@ -1,12 +1,25 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <Navigator/>
+    <v-content class="grey lighten-3">
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
+
+<script>
+import Navigator from './components/Navigator'
+
+export default {
+  name: 'App',
+  components: {
+    Navigator
+  },
+  data: () => ({
+    //
+  })
+}
+</script>
 
 <style>
 #app {
